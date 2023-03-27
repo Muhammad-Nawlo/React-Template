@@ -1,0 +1,119 @@
+.tmp__price {
+  background-color: white;
+  flex: 25%;
+  position: relative;
+  z-index: 1;
+}
+.tmp__price::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 45%;
+  background-color: #f6f6f6;
+  transition: var(--main-transition);
+  z-index: -1;
+}
+.tmp__price::after {
+  content: "";
+  top: 45%;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 55%;
+  background-color: #f6f6f6;
+  transition: var(--main-transition);
+  z-index: -1;
+}
+.tmp__price:hover::before {
+  width: 100%;
+}
+.tmp__price:hover::after {
+  width: 100%;
+}
+
+.tmp__price .tmp__price_title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.tmp__price .tmp__price_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tmp__price .tmp__price_img img {
+  width: 80px;
+  max-width: 100%;
+}
+
+.tmp__price .tmp__price-price {
+  text-align: center;
+}
+
+.tmp__price .tmp__price-price p:first-child {
+  color: var(--main-color);
+  font-size: 60px;
+  font-weight: 900;
+  margin: 1rem 0 0;
+}
+
+.tmp__price .tmp__price-price p:last-child {
+  margin: 0;
+  color: #777;
+}
+
+.tmp__price .tmp_price_aspects {
+  margin: 2rem 0;
+}
+
+.tmp__price .tmp_price_aspects > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #eee;
+  padding: 0.75rem 2rem 0.75rem 0.5rem;
+}
+
+.tmp__price .tmp__price_choose a {
+  display: block;
+  border: 2px solid var(--main-color);
+  width: fit-content;
+  color: var(--main-color);
+  margin: 30px auto 40px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: var(--main-transition);
+  position: relative;
+}
+
+.tmp__price .tmp__price_choose a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.tmp__price .popular {
+  position: absolute;
+  writing-mode: vertical-rl;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px 35px 10px;
+  font-size: 18px;
+  right: 20px;
+  width: 40px;
+}
+
+.tmp__price .popular:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-color: transparent transparent white;
+  border-width: 20px;
+}

@@ -1,0 +1,38 @@
+.tmp__skill {
+    width: 650px;
+    margin-bottom: 1rem;
+}
+
+.tmp__skill .tmp__skill_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.tmp__skill .tmp__skill_info span:first-child {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.tmp__skill .tmp__skill_info span:last-child {
+    color: var(--main-color);
+    font-size: 12px;
+    padding: 0.25rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.tmp__skill .tmp__skill_progress-bar {
+    height: 30px;
+    position: relative;
+    background-color: #eee;
+}
+
+.tmp__skill .tmp__skill_progress-bar div {
+    background-color: var(--main-color);
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+}

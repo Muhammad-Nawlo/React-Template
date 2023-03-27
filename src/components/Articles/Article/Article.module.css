@@ -1,0 +1,44 @@
+@import "../../../App.css";
+.tmp__article .tmp__article_body {
+  padding: 0.5rem 1rem;
+}
+.tmp__article .tmp__article_body h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.tmp__article .tmp__article_body p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.tmp__article .tmp__article_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tmp__article .tmp__article_read-more {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e6e6e7;
+  align-items: center;
+}
+
+.tmp__article .tmp__article_read-more a,
+.tmp__article .tmp__article_read-more svg {
+  color: var(--main-color);
+}
+.tmp__article .tmp__article_read-more a {
+  font-weight: 900;
+  font-size: 16px;
+}
+.tmp__article > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.tmp__article > div:hover .tmp__article_read-more svg {
+  animation: moving-arrow 0.6s linear infinite;
+}

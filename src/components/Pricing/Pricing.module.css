@@ -1,0 +1,17 @@
+.tmp__pricing {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--section-background);
+    position: relative;
+}
+
+.tmp__pricing .tmp__pricing_items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tmp__pricing .tmp__pricing_items div:nth-child(2) {
+    top: -2rem;
+}

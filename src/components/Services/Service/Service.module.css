@@ -1,0 +1,59 @@
+.tmp__service {
+  background-color: white;
+  text-align: center;
+  padding-top: 4rem;
+  position: relative;
+}
+.tmp__service::before {
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  top: -3px;
+  background-color: var(--main-color);
+  position: absolute;
+  width: 0;
+  transition: var(--main-transition);
+}
+
+.tmp__service:hover::before {
+  width: 100%;
+}
+.tmp__service .tmp__service_icon {
+  text-align: center;
+}
+.tmp__service .tmp__service_icon svg {
+  color: #d5d5d5;
+}
+.tmp__service .tmp__service_title {
+  font-size: 24px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+.tmp__service .tmp__service_more {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+.tmp__service .tmp__service_more .tmp__service_more-number {
+  background-color: var(--main-color);
+  padding: 1rem 3rem;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+}
+.tmp__service .tmp__service_more .tmp__service_more-number::after {
+  content: "";
+  width: 60px;
+  background-color: #d5d5d5;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -45px;
+  transform: skewX(-30deg);
+}
+.tmp__service .tmp__service_more .tmp__service_more-details {
+  padding: 1rem 2rem;
+  color: var(--main-color);
+}

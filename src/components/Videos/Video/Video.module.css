@@ -1,0 +1,24 @@
+.tmp__video {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    transition: var(--main-transition);
+    border-top: 1px solid var(--section-background);
+    cursor: pointer;
+}
+
+.tmp__video:hover {
+    background-color: #fafafa;
+}
+.tmp__video > a{
+    color: black;
+    transition: var(--main-transition);
+}
+.tmp__video:hover > a {
+    color: var(--main-color);
+}
+
+.tmp__video > p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+}

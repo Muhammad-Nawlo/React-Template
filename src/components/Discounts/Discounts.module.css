@@ -1,0 +1,91 @@
+.tmp__discounts {
+  display: flex;
+}
+
+.tmp__discounts .tmp__discounts_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  background-image: url("../../assets/imgs/discount-background1.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+  flex-basis: 50%;
+  position: relative;
+  z-index: 1;
+  animation: change-background 10s linear infinite;
+}
+
+.tmp__discounts .tmp__discounts_info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23 135 224 / 97%);
+  z-index: -1;
+}
+.tmp__discounts .tmp__discounts_info > h3 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.tmp__discounts .tmp__discounts_info > p {
+  line-height: 1.6;
+  font-size: 18px;
+  max-width: 500px;
+}
+.tmp__discounts .tmp__discounts_info .tmp__discounts_info_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.tmp__discounts .tmp__discounts_info .tmp__discounts_info_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tmp__discounts .tmp__discounts_form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.tmp__discounts .tmp__discounts_form > h3 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.tmp__discounts .tmp__discounts_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tmp__discounts .tmp__discounts_form form > input,
+.tmp__discounts .tmp__discounts_form form > textarea {
+  display: block;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+  outline: none;
+}
+.tmp__discounts .tmp__discounts_form form > textarea {
+  resize: none;
+}
+.tmp__discounts .tmp__discounts_form form > input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}

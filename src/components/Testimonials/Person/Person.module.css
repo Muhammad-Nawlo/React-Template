@@ -1,0 +1,47 @@
+.tmp__person {
+  position: relative;
+}
+.tmp__person div:not(:first-child) {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+}
+.tmp__person .tmp__person-img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 10px solid #ececec;
+  border-radius: 50%;
+  top: -50px;
+  right: -10px;
+  z-index: 6;
+}
+.tmp__person .tmp__person-img img {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.tmp__person-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.tmp__person-job {
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+.tmp__person-description {
+  line-height: 1.7;
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,21 @@
+.tmp__work-steps {
+    padding-bottom: var(--main-padding-bottom);
+    padding-top: var(--main-padding-top);
+    background-color: var(--section-background);
+}
+
+.tmp__work-steps .tmp__work-steps_content {
+    display: flex;
+}
+
+.tmp__work-steps .tmp__work-steps_content .tmp__work-steps_content-img {
+    display: flex;
+    align-items: center;
+}
+
+.tmp__work-steps .tmp__work-steps_content .tmp__work-steps_content-img img {
+}
+
+.tmp__work-steps .tmp__work-steps_content .tmp__work-steps_content-items {
+    margin-left: 5rem;
+}

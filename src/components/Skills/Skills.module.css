@@ -1,0 +1,25 @@
+.tmp__our-skills {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+
+.tmp__our-skills .tmp__our-skills_content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tmp__our-skills .tmp__our-skills_content .tmp__our-skills_content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tmp__our-skills .tmp__our-skills_content .tmp__our-skills_content-img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.tmp__our-skills .tmp__our-skills_content .tmp__our-skills_content-items {
+
+}
